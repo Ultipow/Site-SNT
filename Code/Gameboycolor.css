@@ -1,0 +1,176 @@
+body {
+    background-image: url("../Ressources/Gameboycolor.jpeg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    text-align: center;
+}
+span:first-child{
+    animation-name: stroke;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    font-size: 30px;
+}
+@keyframes stroke {
+    0% {
+      color: rgb(112, 0, 0);
+    }
+    20% {
+      color: #481c8e;
+    }
+    40% {
+      color: rgb(13, 125, 39);
+    }
+    60% {
+      color: rgb(255, 251, 0);
+    }
+    80% {
+      color: rgb(0, 95, 114);
+    }
+}
+            .image-container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgb(255, 255, 255);
+                border: 1px solid #008100;
+                border-radius: 30px;
+                padding: 10px;
+                box-shadow: 0 0 10px
+                    rgba(0, 0, 0, 0.2);
+                z-index: 9999;
+                max-width: 80%;
+                max-height: 80%;
+                overflow: auto;
+            }
+
+            /* Styling for the close button */
+            .close-btn {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                background-color: #0ba609;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            button{
+                padding: 10px 50px ;
+                border-radius: 20px;
+                background-color: wheat;
+                color: grey;
+            }
+            
+            /* Styling for the image */
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+/* HTML Nav Styles */
+* {
+    margin:0;
+    padding:0;
+    font-family: Retro;
+}
+
+nav menuitem {
+    position:relative;
+    display:block;
+    opacity:0;
+    cursor:pointer;
+}
+ 
+nav menuitem > menu {
+    position: absolute;
+    pointer-events:none;
+}
+
+nav > menu {
+    display:flex;
+}
+ 
+ 
+nav > menu > menuitem {
+     pointer-events: all; opacity:1; 
+}
+
+menu menuitem a { 
+    white-space:nowrap; display:block; 
+}
+
+/* User Styles Below Not Required */
+nav { 
+    margin-top: 40px;
+    margin-left: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ 
+nav a {
+    background:rgb(2, 70, 76);
+    color:#FFF;
+    min-width:190px;
+    transition: background 0.5s, color 0.5s, transform 0.5s;
+    margin:0px 6px 6px 0px;
+    padding:20px 40px;
+    box-sizing:border-box;
+    border-radius:3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    position:relative;
+}
+section::first-line{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+span{
+    color: wheat;
+    font-size: 22px;
+    
+}
+section {
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 125%;
+    text-align: center;
+    margin: 50pt 25pt;
+    border: solid 5px black;
+    border-radius: 10pt;
+    width: 50%;
+    padding: 40px;
+    margin-inline: auto;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    font-size: 15px;
+}
+a{color:inherit; text-decoration:none;}
+p{display:inline-block;}
+s{
+    display:none; text-decoration: none;
+    color: white;
+}
+s:target{display:block;}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 150%;
+    text-align: center;
+    margin: 50pt 25pt;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 50pt;
+    width: 50%;
+    padding: 0px;
+    margin-inline: auto;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+}
+p{
+    font-size: 25px;
+    color: wheat;
+}
